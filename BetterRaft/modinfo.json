@@ -1,0 +1,76 @@
+{
+  "name": "Better Raft",
+  "author": "DeadSigma",
+  "description": "Survival just got more exciting: increase your stamina, improve your breathing, and learn to fish!",
+  "version": "3.2", 
+  "license": "",
+  "icon": "icon.png",
+  "banner": "banner.png",
+  "gameVersion": "1.0",
+  "requiredByAllPlayers": false,
+  "updateUrl": "", 
+  "isModPermanent": false,
+  "excludedFiles": [],
+  "modSettings": [
+    {
+      "type": "slider",
+      "name": "divesPerLevelSetting",
+      "text": "Dives required per oxygen level",
+      "access": "both", 
+      "default": 10,    
+      "range": {         
+        "type": "number",                       
+        "min": 1,                                   
+        "max": 50,                                  
+        "decimals": 0                               
+      }
+    },
+    {
+      "type": "slider",
+      "name": "oxygenRegenRateModifier",
+      "text": "O2 regeneration rate",
+      "access": "both", 
+      "default": 0.5,                           
+      "range": {
+        "type": "percent",                      
+        "min": 0.01,                             
+        "max": 1,                             
+        "decimals": 0                       
+      }
+    },
+    {
+      "type": "slider",
+      "name": "fatigueTimePerLevelSetting",
+      "text": "Time spent in water to gain one stamina level (sec)",
+      "access": "both",
+      "default": 150, 
+      "range": {
+        "type": "number",
+        "min": 60,    
+        "max": 666,  
+        "decimals": 0
+      }
+    },
+    {
+      "type": "slider",
+      "name": "fatigueRegenRateModifier",
+      "text": "Stamina regeneration on land",
+      "access": "both",
+      "default": 0.5,
+      "range": {
+        "type": "percent",
+        "min": 0.01,                             
+        "max": 1,   
+        "decimals": 0
+      }
+    },
+    {
+      "type": "slider",
+      "name": "fatigueRegenCooldownSetting",
+      "text": "Stamina regen cooldown (sec)",
+      "access": "globalcustom",
+      "default": 2, 
+      "range": { "type": "number", "min": 0, "max": 10, "decimals": 1 }
+    }
+  ]
+}
